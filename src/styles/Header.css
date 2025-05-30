@@ -1,0 +1,122 @@
+.header {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(240, 240, 245, 0.9));
+  height: var(--header-height);
+  padding: 0 var(--container-padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: var(--container-width);
+  height: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo h1 {
+  color: var(--primary);
+  font-size: calc(var(--base-font-size) * 1.5);
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(to right, var(--primary), var(--primary-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.logo h1:hover {
+  transform: scale(1.05);
+}
+
+.logo-subtitle {
+  font-size: calc(var(--base-font-size) * 0.875);
+  color: var(--dark);
+  font-weight: 400;
+  opacity: 0.7;
+  margin-top: 0.25rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: var(--nav-gap);
+}
+
+.language-toggle {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: calc(var(--base-font-size) * 0.5) calc(var(--base-font-size));
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: calc(var(--base-font-size) * 0.875);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.language-toggle:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/* Медиа-запросы для разных разрешений */
+@media screen and (max-width: 1365px) {
+  .header {
+    padding: 0 calc(var(--container-padding) * 0.75);
+  }
+  
+  .header-right {
+    gap: calc(var(--nav-gap) * 0.75);
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0 calc(var(--container-padding) * 0.5);
+  }
+  
+  .logo h1 {
+    font-size: calc(var(--base-font-size) * 1.25);
+  }
+  
+  .logo-subtitle {
+    font-size: calc(var(--base-font-size) * 0.75);
+  }
+  
+  .header-right {
+    gap: calc(var(--nav-gap) * 0.5);
+  }
+  
+  .language-toggle {
+    padding: calc(var(--base-font-size) * 0.4) calc(var(--base-font-size) * 0.8);
+    font-size: calc(var(--base-font-size) * 0.75);
+  }
+}

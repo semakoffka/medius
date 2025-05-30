@@ -1,0 +1,95 @@
+{
+    "nav": {
+      "home": "Home",
+      "news": "News",
+      "about": "About",
+      "contact": "Contact",
+      "services": "Services"
+    },
+    "home": {
+      "title": "Medius Translation Agency",
+      "subtitle": "Professional translations in all languages",
+      "cta": "Order Translation"
+    },
+    "news": {
+      "title": "News",
+      "readMore": "Read more",
+      "items": {
+        "1": {
+          "title": "New Languages in Our Agency",
+          "content": "We are pleased to announce the expansion of our language list. Now we offer translations in Chinese and Japanese."
+        },
+        "2": {
+          "title": "Certificate Updates",
+          "content": "Our translators have successfully completed recertification and received new international certificates."
+        },
+        "3": {
+          "title": "New Services",
+          "content": "We are launching a new service - simultaneous translation for online conferences and webinars."
+        }
+      }
+    },
+    "about": {
+      "title": "About Us",
+      "description": "Medius Translation Agency is a team of professional translators with years of experience. We guarantee high-quality translations and meeting all deadlines.",
+      "experience": "Over 10 years of experience",
+      "languages": "Working with 50+ languages",
+      "clients": "Over 1000 satisfied clients"
+    },
+"contact": {
+    "title": "Contact Us",
+    "description": "Get in touch with us for inquiries or to request our services.",
+    "phone": "Phone",
+    "phone.availability": "Mon-Fri: 9:00 AM - 6:00 PM",
+    "email": "Email",
+    "email.response": "We'll respond within 24 hours",
+    "address": "Address",
+    "address.value": "Universitetsky per. 93, Rostov-on-Don",
+    "address.workingHours": "Mon-Fri: 9:00 AM - 6:00 PM",
+    "aria": {
+      "phone": "Phone contact link",
+      "email": "Email contact link",
+      "address": "Address information"
+    }
+  },
+    "services": {
+      "title": "Our Services",
+      "technical": {
+        "title": "Technical Translation",
+        "description": "Translation of technical documentation, manuals, drawings"
+      },
+      "medical": {
+        "title": "Medical Translation",
+        "description": "Translation of medical documents, research, reports"
+      },
+      "legal": {
+        "title": "Legal Translation",
+        "description": "Translation of contracts, agreements, legal documents"
+      },
+      "literary": {
+        "title": "Literary Translation",
+        "description": "Translation of literary texts, books, articles"
+      },
+      "notary": {
+        "title": "Notary Translation",
+        "description": "Translation of documents with notary certification"
+      },
+      "interpretation": {
+        "title": "Interpretation",
+        "description": "Simultaneous and consecutive interpretation at events"
+      }
+    },
+    "tags": "Tag Cloud",
+    "banners": "Banner space",
+    "footer": {
+      "contact": "Contact",
+      "address": "Address",
+      "city": "Rostov-on-Don, Universitetsky per. 93",
+      "created": "Created by Lingvo+, 2025"
+    },
+    "banner": {
+      "left": { "alt": "Left sidebar banner" },
+      "right": { "alt": "Right sidebar banner" }
+    }
+  }
+  

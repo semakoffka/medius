@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Основная цветовая схема */
+  --primary: #2E7D32;
+  --primary-rgb: 46, 125, 50;
+  --primary-dark: #1B5E20;
+  --primary-light: #4CAF50;
+  --secondary: #81C784;
+  --secondary-rgb: 129, 199, 132;
+  --light: #F1F8E9;
+  --dark: #212529;
+  --gray: #6c757d;
+  
+  /* Дополнительные цвета */
+  --success: #4CAF50;
+  --info: #66BB6A;
+  --warning: #8BC34A;
+  --danger: #D32F2F;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, var(--light), #ffffff);
+  color: var(--dark);
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Улучшенные стили для навигации */
+.nav-link {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  position: relative;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: var(--primary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(-50%);
+}
+
+.nav-link:hover {
+  color: var(--primary-dark);
+  background-color: rgba(var(--primary-rgb), 0.05);
+}
+
+.nav-link:hover:after {
+  width: 80%;
+}
+
+/* Анимации для интерактивных элементов */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-20px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+/* Стили для кнопок */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: none;
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  background: var(--primary-dark);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+/* Стили для карточек */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Медиа-запросы */
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-content {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1900px) {
+  .main-content {
+    max-width: 1800px;
+    padding: 2rem 2rem;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+}
