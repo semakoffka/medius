@@ -24,7 +24,7 @@ function App() {
           <nav className="desktop-nav">
             <ul>
               {[
-                { to: '/', text: t('nav.home') },
+                { to: '/medius', text: t('nav.home') },
                 { to: '/news', text: t('nav.news') },
                 { to: '/about', text: t('nav.about') },
                 { to: '/contact', text: t('nav.contact') },
@@ -44,7 +44,7 @@ function App() {
         </section>
         <article className="main-article" role="main">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/medius" element={<Home />} />
             <Route path="/news" element={<News />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
