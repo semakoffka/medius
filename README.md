@@ -47,7 +47,7 @@ Medius — это современное многоязычное веб-при�
 
 ```bash
 # Клонирование репозитория
-git clone https://github.com/username/medius.git
+git clone https://github.com/semakoffka/medius.git
 
 # Переход в директорию проекта
 cd medius
@@ -101,7 +101,7 @@ medius/
 
 Если у вас есть вопросы или предложения:
 - Создайте issue в репозитории проекта
-- Напишите на [email@example.com](mailto:email@example.com)
+- Напишите на [elishchenko@sfedu.ru](mailto:elishchenko@sfedu.ru)
 
 ---
 
