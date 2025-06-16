@@ -114,6 +114,10 @@
   flex-shrink: 0;
 }
 
+.feature {
+  margin-top: 2rem;
+}
+
 @media (max-width: 768px) {
   .home {
     padding: 1rem;

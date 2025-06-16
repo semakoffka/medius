@@ -78,20 +78,21 @@
   gap: calc(var(--base-font-size) * 0.75);
 }
 
-.footer-links a {
+.footer-links a,
+.footer-links Link {
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   font-size: calc(var(--base-font-size) * 0.9);
   display: inline-block;
   position: relative;
   padding-left: calc(var(--base-font-size) * 0.75);
+  transition: color 0.3s ease;
 }
 
-
-.footer-links a:hover {
+.footer-links a:hover,
+.footer-links Link:hover {
   color: white;
 }
-
 
 /* Медиа-запросы для адаптивности */
 @media screen and (max-width: 1365px) {

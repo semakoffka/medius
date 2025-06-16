@@ -12,7 +12,7 @@ function Contact() {
       <div className="contact-list">
         <div className="contact-item">
           <h3>{t('contact.phone')}</h3>
-          <a href="tel:+79085175043">+7 908 517 50 43</a>
+          <a href="tel:+79515067619">+7 951 506 76 19</a>
           <p>{t('contact.phone.availability')}</p>
         </div>
 

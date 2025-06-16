@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 function Header() {
@@ -12,10 +13,10 @@ function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <div className="logo">
+        <Link to="/medius" className="logo">
           <h1>Медиус</h1>
           <span className="logo-subtitle">{t('home.subtitle')}</span>
-        </div>
+        </Link>
         <div className="header-right">
           <button className="language-toggle" onClick={toggleLanguage}>
             {i18n.language === 'ru' ? 'EN' : 'RU'}
